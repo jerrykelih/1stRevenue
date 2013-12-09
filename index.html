@@ -25,59 +25,86 @@
       <div class="container">
         <img src="./images/1stRevenue-Logo.svg">     
         <h1>BUSINESS MODEL CANVAS MADE EASY</h1>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
+        <p><a class="btn btn-primary btn-lg" role="button">SIGN UP</a></p>
       </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container">
 
-        <div class="devices row">
+        <div class="devices row text-center">
             <div class="col-sm-12">
-                <h2>Works on any device</h2>
-                <img src="./images/devices.jpg"> 
+                <h2 class="title">Works on any device</h2>
             </div>
+            <div class="device col-sm-4 col-sm-push-1">
+                <img src="./images/tablet.png"> 
+            </div>
+            <div class="device col-sm-6">
+                <img src="./images/desktop.png"> 
+            </div>
+            <div class="device col-sm-2 col-sm-pull-1">
+                <img src="./images/phone.png"> 
+            </div>
+
         </div>
 
-        <div class="navigation row">
-            <div class="col-sm-12">
-                <h2>Easy Navigation</h2>
-                <h4>Navigate with ease through diferent canvas sections or filter stickers by color</h4>
-                <img src="./images/navigation.jpg"> 
-            </div>
-        </div>
 
-        <div class="features row">
+        <div class="features row text-center">
             <div class="col-sm-12">
-                <h2>Get Feedback</h2>
+                <h2 class="title">Features</h2>
             </div>
 
-            <div class="col-sm-4">
-                <img src="./images/chat.svg"> 
-                <h3>GET FEEDBACK</h3>
-                <p>Invite collaborators, investors or anyone from your social network to view and make feedback on the current stage of your business model canvas.</p> 
+            <div class="feature col-sm-4">
+                <div class="icon">
+                    <img src="./images/chat.svg"> 
+                </div>
+                    <h3>GET FEEDBACK</h3>
+                    <p>Invite collaborators, investors or anyone from your social network to view and make feedback on the current stage of your business model canvas.</p> 
             </div>
-            <div class="col-sm-4">
-                <img src="./images/cloud.svg"> 
-                <h3>OFFLINE SYNC</h3>
-                <p>No need to worry about internet conection as all the changes are synced automaticly when you will come online.</p> 
-            </div>
-            <div class="col-sm-4">
-                <img src="./images/social.svg"> 
-                <h3>SOCIAL LOGIN</h3>
-                <p>No need to worry about internet conection as all the changes are synced automaticly when you will come online.</p> 
+            <div class="feature col-sm-4">
+                <div class="icon">
+                    <img src="./images/cloud.svg"> 
+                </div>                          
+                    <h3>OFFLINE SYNC</h3>
+                    <p>No need to worry about internet conection as all the changes are synced automaticly when you will come online.</p> 
+            </div>  
+            <div class="feature col-sm-4">
+                <div class="icon">
+                    <img src="./images/social.svg">
+                </div>            
+                    <h3>SOCIAL LOGIN</h3>
+                    <p>No need to worry about internet conection as all the changes are synced automaticly when you will come online.</p> 
             </div>
         </div> 
 
-        <div class="row">
+        <div class="navigation row text-center">
             <div class="col-sm-12">
-                <h2>Sign Up!</h2>
+                <h2 class="title">Easy Navigation</h2>
+                <h4>Navigate with ease through diferent canvas sections or filter stickers by color</h4>
+            </div>
+
+            <div class="detail col-sm-4">
+                    <img src="./images/sections.png"> 
+            </div>
+            <div class="detail col-sm-4">
+                    <img src="./images/blocks.png"> 
+            </div>
+            <div class="detail col-sm-4">
+                    <img src="./images/colors.png"> 
+            </div>
+        </div> 
+
+        <div class="signup row text-center">
+            <div class="col-sm-12">
+                <h2 class="title">Sign Up!</h2>
                 <h4>We are almost there.</h4>
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Sign Up!</button>
-                  </span>
-                </div><!-- /input-group -->
+                <form action="form_sender.php" method="post" class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="dialogExampleInputEmail1">Your E-mail</label>
+                        <input name="email"  type="text" class="email form-control" id="dialogExampleInputEmail1" placeholder="Your E-mail">
+                    </div>
+                    <button name="send" type="submit" class="btn btn-primary btn-wide button2">Sign Up</button>
+                </form>      
+                      
             </div>
         </div>
 
@@ -86,7 +113,15 @@
 
 <footer>
     <div class="bottom-menu bottom-menu-inverse text-center .col-md-6 .col-md-offset-3">
-        <p>Made in Norway</p>
+        <div class="contact">
+            <h4><a href="info:terje@1strevenue.com" target="_blank">info@1strevenue.com</a></h4>
+            <h4><a href="tel:+4790056958">+47 900 569 58</a></h4>
+        </div>
+        <div class="disclamer">
+            <p>Made in Norway</p>
+            <p>© 2013 1st Revenue</p>
+        </div>
+
     </div>
 
 </footer>    

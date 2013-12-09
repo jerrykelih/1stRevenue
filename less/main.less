@@ -3,9 +3,17 @@
 
 @import "mixins";
 
-body {
-  font-weight: 500;
+
+h2 {
+  color: @fjord;
 }
+
+.btn-lg {
+    font-size: 25px;
+    padding: 15px 30px;
+}
+
+
 .jumbotron {
     background: url(../images/header.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -13,41 +21,101 @@ body {
     -o-background-size: cover;
     background-size: cover;
 
+    padding-top: 80px;
+    padding-bottom: 6 0px;
+
 
     h1 {
     font-size: 33px;
     color: white;
-    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    line-height: 1.6em;
+
     }
 
 }
 
+.row {  
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+    .title {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+}
+
+
 .devices {
     img {
-      width: 100%;
-      padding: 30px 0px;
+      max-width: 100%;
+      height: 200px;
+    }
+
+}
+
+
+
+.features{
+    h3 {
+      font-size: 30px;
+    }
+
+    .icon {
+      margin-bottom: 60px;
+      height: 80px;  
+    }
+    .feature {
+      p {
+        line-height: 2.2em;
+      }
     }
 }
 
 .navigation {
-    img {
-      width: 100%;
-      padding: 30px 0px;
+
+    .detail {
+          padding-top: 20px;
+          img {
+            max-width: 200px;
+            padding: 30px 0px;
+          }
+
     }
+
     h4 {
-      font-weight: 300;
+      font-weight: 300; 
     }
 }
 
-.features{
-    h3 {
-    font-size: 30px;
+.signup {
+
+    form {
+      .form-group {
+      position: relative;
+      width: 30%;
+          .form-control {
+            height: 50px;
+          }
+      }
+      button {
+      height: 50px;
+      font-size: 20px;
+    }
     }
 }
 
 footer {
     .bottom-menu {
     margin-top: 60px;
+
+        .contact {
+          margin-bottom: 40px;
+          h4 {
+            padding-bottom: 10px;
+          }
+        }
     }
 }
 

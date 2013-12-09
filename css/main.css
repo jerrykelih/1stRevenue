@@ -1,36 +1,99 @@
+/* line 620, /Users/jerry/Sites/1stRevenue_com/less/mixins.less */
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
 }
-body {
-  font-weight: 500;
+/* line 7, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+h2 {
+  color: #207178;
 }
+/* line 11, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.btn-lg {
+  font-size: 25px;
+  padding: 15px 30px;
+}
+/* line 17, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .jumbotron {
   background: url(../images/header.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 6 0px;
 }
+/* line 28, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .jumbotron h1 {
   font-size: 33px;
   color: white;
-  margin-top: 0px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  line-height: 1.6em;
 }
+/* line 39, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.row {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+/* line 43, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.row .title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 51, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .devices img {
-  width: 100%;
-  padding: 30px 0px;
+  max-width: 100%;
+  height: 200px;
 }
-.navigation img {
-  width: 100%;
-  padding: 30px 0px;
-}
-.navigation h4 {
-  font-weight: 300;
-}
+/* line 61, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .features h3 {
   font-size: 30px;
 }
+/* line 65, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.features .icon {
+  margin-bottom: 60px;
+  height: 80px;
+}
+/* line 70, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.features .feature p {
+  line-height: 2.2em;
+}
+/* line 78, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.navigation .detail {
+  padding-top: 20px;
+}
+/* line 80, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.navigation .detail img {
+  max-width: 200px;
+  padding: 30px 0px;
+}
+/* line 87, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.navigation h4 {
+  font-weight: 300;
+}
+/* line 95, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.signup form .form-group {
+  position: relative;
+  width: 30%;
+}
+/* line 98, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.signup form .form-group .form-control {
+  height: 50px;
+}
+/* line 102, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+.signup form button {
+  height: 50px;
+  font-size: 20px;
+}
+/* line 110, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu {
   margin-top: 60px;
+}
+/* line 113, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+footer .bottom-menu .contact {
+  margin-bottom: 40px;
+}
+/* line 115, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+footer .bottom-menu .contact h4 {
+  padding-bottom: 10px;
 }
