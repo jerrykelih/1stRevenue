@@ -24,9 +24,9 @@
   <body>
     <div class="jumbotron text-center">
       <div id="header" class="container">
-        <img class="animated fadeInLeft" src="./images/1stRevenue-Logo.svg">     
-        <h1 class="animated fadeInLeft">BUSINESS MODEL CANVAS MADE EASY</h1>
-        <p><a class="btn btn-primary btn-lg" role="button" data-loc="signup" href="#signup">SIGN UP</a></p>
+        <img class="animated fadeInDown" src="./images/1stRevenue-Logo.svg">     
+        <h1 class="animated fadeIn">BUSINESS MODEL CANVAS MADE EASY</h1>
+        <p><a class="animated fadeInUp btn btn-primary btn-lg" role="button" data-loc="signup" href="#signup">SIGN UP</a></p>
       </div>
     </div>
 
@@ -34,15 +34,15 @@
 
         <div id="devices" class="row text-center">
             <div class="col-sm-12">
-                <h2 class="title">Works on any device</h2>
+                <h2 class="title fade-in-left">Works on any device</h2>
             </div>
-            <div class="device col-sm-4 col-sm-push-1">
+            <div class="device fade-in-left col-sm-4 col-sm-push-1">
                 <img src="./images/tablet.png"> 
             </div>
-            <div class="device col-sm-6">
+            <div class="device fade-in-right col-sm-6">
                 <img src="./images/desktop.png"> 
             </div>
-            <div class="device col-sm-2 col-sm-pull-1">
+            <div class="device fade-in-right col-sm-2 col-sm-pull-1">
                 <img src="./images/phone.png"> 
             </div>
 
@@ -51,24 +51,24 @@
 
         <div id="features" class="row text-center">
             <div class="col-sm-12">
-                <h2 class="title">Features</h2>
+                <h2 class="title fade-in-right ">Features</h2>
             </div>
 
-            <div class="feature col-sm-4">
+            <div class="feature fade-in-left col-sm-4">
                 <div class="icon">
                     <img src="./images/chat.svg"> 
                 </div>
                     <h3>GET FEEDBACK</h3>
                     <p>Invite collaborators, investors or anyone from your social network to view and make feedback on the current stage of your business model canvas.</p> 
             </div>
-            <div class="feature col-sm-4">
+            <div class="feature fade-in-left col-sm-4">
                 <div class="icon">
                     <img src="./images/cloud.svg"> 
                 </div>                          
                     <h3>OFFLINE SYNC</h3>
                     <p>No need to worry about internet conection as all the changes are synced automaticly when you will come online.</p> 
             </div>  
-            <div class="feature col-sm-4">
+            <div class="feature fade-in-right col-sm-4">
                 <div class="icon">
                     <img src="./images/social.svg">
                 </div>            
@@ -79,26 +79,26 @@
 
         <div id="nav-detail" class="row text-center">
             <div class="col-sm-12">
-                <h2 class="title">Easy Navigation</h2>
-                <h4>Navigate with ease through diferent canvas sections or filter stickers by color</h4>
+                <h2 class="title fade-in-left">Easy Navigation</h2>
+                <h4 class="subtitle fade-in-left">Navigate with ease through diferent canvas sections or filter stickers by color</h4>
             </div>
 
-            <div class="detail col-sm-4">
+            <div class="detail fade-in-left col-sm-4">
                     <img src="./images/sections.png"> 
             </div>
-            <div class="detail col-sm-4">
+            <div class="detail fade-in-right col-sm-4">
                     <img src="./images/blocks.png"> 
             </div>
-            <div class="detail col-sm-4">
+            <div class="detail fade-in-right col-sm-4">
                     <img src="./images/colors.png"> 
             </div>
         </div> 
 
         <div id="signup" class="row text-center">
             <div class="col-sm-12">
-                <h2 class="title">Sign Up!</h2>
-                <h4>We are almost there.</h4>
-                <form action="form_sender.php" method="post" class="form-inline">
+                <h2 class="title fade-in-left">Sign Up!</h2>
+                <h4 class="subtitle fade-in-right">We are almost there.</h4>
+                <form action="form_sender.php" method="post" class="form-inline bounce-inview">
                     <div class="form-group">
                         <label class="sr-only" for="dialogExampleInputEmail1">Your E-mail</label>
                         <input name="email"  type="text" class="email form-control" id="dialogExampleInputEmail1" placeholder="Your E-mail">
@@ -146,13 +146,29 @@
                 var platform = navigator.platform
                 iOs = platform === 'iPod' || platform === 'iPad' || platform === 'iPhone';
 
-                if (!iOS) {
-                    $('#features').bind('inview', function (event, visible) {
+                if (!iOs) {
+                    $('.fade-in-left').bind('inview', function (event, visible) {
                         if (visible) {
                             $(this).addClass('animated fadeInLeft');
                         }
                     });   
+
+                    $('.fade-in-right').bind('inview', function (event, visible) {
+                        if (visible) {
+                            $(this).addClass('animated fadeInRight');
+                        }
+                    });   
+
+                    $('.bounce-inview').bind('inview', function (event, visible) {
+                        if (visible) {
+                            $(this).addClass('animated bounce');
+                        }
+                    });   
+
+
+
                 }
+
 
 
 
