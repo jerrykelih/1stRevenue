@@ -11,6 +11,7 @@
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
 
 
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -22,16 +23,16 @@
   </head>
   <body>
     <div class="jumbotron text-center">
-      <div class="container">
-        <img src="./images/1stRevenue-Logo.svg">     
-        <h1>BUSINESS MODEL CANVAS MADE EASY</h1>
-        <p><a class="btn btn-primary btn-lg" role="button">SIGN UP</a></p>
+      <div id="header" class="container">
+        <img class="animated fadeInLeft" src="./images/1stRevenue-Logo.svg">     
+        <h1 class="animated fadeInLeft">BUSINESS MODEL CANVAS MADE EASY</h1>
+        <p><a class="btn btn-primary btn-lg" role="button" data-loc="signup" href="#signup">SIGN UP</a></p>
       </div>
     </div>
 
     <div class="container">
 
-        <div class="devices row text-center">
+        <div id="devices" class="row text-center">
             <div class="col-sm-12">
                 <h2 class="title">Works on any device</h2>
             </div>
@@ -48,7 +49,7 @@
         </div>
 
 
-        <div class="features row text-center">
+        <div id="features" class="row text-center">
             <div class="col-sm-12">
                 <h2 class="title">Features</h2>
             </div>
@@ -76,7 +77,7 @@
             </div>
         </div> 
 
-        <div class="navigation row text-center">
+        <div id="nav-detail" class="row text-center">
             <div class="col-sm-12">
                 <h2 class="title">Easy Navigation</h2>
                 <h4>Navigate with ease through diferent canvas sections or filter stickers by color</h4>
@@ -93,7 +94,7 @@
             </div>
         </div> 
 
-        <div class="signup row text-center">
+        <div id="signup" class="row text-center">
             <div class="col-sm-12">
                 <h2 class="title">Sign Up!</h2>
                 <h4>We are almost there.</h4>
@@ -102,9 +103,9 @@
                         <label class="sr-only" for="dialogExampleInputEmail1">Your E-mail</label>
                         <input name="email"  type="text" class="email form-control" id="dialogExampleInputEmail1" placeholder="Your E-mail">
                     </div>
-                    <button name="send" type="submit" class="btn btn-primary btn-wide button2">Sign Up</button>
+                    <button name="send" type="submit" class="btn btn-primary btn-signup btn-wide button2">Sign Up</button>
                 </form>      
-                      
+
             </div>
         </div>
 
@@ -138,5 +139,33 @@
     <script src="js/flatui-radio.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script>
+            (function ($) {
+                var platform = navigator.platform
+                iOs = platform === 'iPod' || platform === 'iPad' || platform === 'iPhone';
+
+                if (!iOS) {
+                    $('#features').bind('inview', function (event, visible) {
+                        if (visible) {
+                            $(this).addClass('animated fadeInLeft');
+                        }
+                    });   
+                }
+
+
+
+                $('#header').on('click', 'a', function () {
+                    var $clickedAnchor = $(this),
+                        $panelToScrollTo = $('#' + $clickedAnchor.data('loc'));
+                        $panelToScrollTo.scrollTo();
+                });
+
+            }(jQuery));
+
+
+    </script>
+
   </body>
 </html>

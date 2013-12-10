@@ -41,59 +41,67 @@ h2 {
   padding-bottom: 40px;
 }
 /* line 51, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.devices img {
+#devices img {
   max-width: 100%;
   height: 200px;
 }
 /* line 61, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.features h3 {
+#features h3 {
   font-size: 30px;
 }
 /* line 65, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.features .icon {
+#features .icon {
   margin-bottom: 60px;
   height: 80px;
 }
 /* line 70, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.features .feature p {
+#features .feature p {
   line-height: 2.2em;
 }
 /* line 78, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.navigation .detail {
+#nav-detail .detail {
   padding-top: 20px;
 }
 /* line 80, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.navigation .detail img {
+#nav-detail .detail img {
   max-width: 200px;
   padding: 30px 0px;
 }
 /* line 87, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.navigation h4 {
+#nav-detail h4 {
   font-weight: 300;
 }
-/* line 95, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.signup form .form-group {
+/* line 94, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+#signup form {
+  padding-top: 20px;
+}
+/* line 97, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+#signup form .form-group {
   position: relative;
   width: 30%;
 }
-/* line 98, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.signup form .form-group .form-control {
+/* line 101, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+#signup form .form-group input[placeholder] {
+  font-size: 23px;
+}
+/* line 104, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+#signup form .form-group .form-control {
   height: 50px;
 }
-/* line 102, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-.signup form button {
+/* line 108, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+#signup form button {
   height: 50px;
   font-size: 20px;
 }
-/* line 110, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 116, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu {
   margin-top: 60px;
 }
-/* line 113, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 119, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu .contact {
   margin-bottom: 40px;
 }
-/* line 115, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 121, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu .contact h4 {
   padding-bottom: 10px;
 }
