@@ -7,12 +7,16 @@
 h2 {
   color: #207178;
 }
-/* line 11, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 10, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+h4 {
+  font-weight: 300;
+}
+/* line 14, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .btn-lg {
   font-size: 25px;
   padding: 15px 30px;
 }
-/* line 17, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 20, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .jumbotron {
   background: url(../images/header.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -22,7 +26,7 @@ h2 {
   padding-top: 80px;
   padding-bottom: 6 0px;
 }
-/* line 28, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 31, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .jumbotron h1 {
   font-size: 33px;
   color: white;
@@ -30,90 +34,86 @@ h2 {
   padding-bottom: 50px;
   line-height: 1.6em;
 }
-/* line 39, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 42, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .row {
   margin-bottom: 50px;
   margin-top: 20px;
 }
-/* line 43, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 46, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 .row .title {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 51, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 54, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #devices img {
   max-width: 100%;
   height: 200px;
 }
 @media (max-width: 768px) {
-  /* line 57, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+  /* line 60, /Users/jerry/Sites/1stRevenue_com/less/main.less */
   #devices .device.col-sm-push-1 {
     padding-bottom: 60px;
   }
 }
-/* line 69, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 72, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #features h3 {
   font-size: 30px;
 }
-/* line 73, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 76, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #features .icon {
   margin-bottom: 60px;
   height: 80px;
 }
-/* line 78, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 81, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #features .feature p {
   line-height: 2.2em;
 }
-/* line 86, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 89, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #nav-detail .detail {
   padding-top: 20px;
 }
-/* line 88, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 91, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #nav-detail .detail img {
-  max-width: 200px;
+  max-width: 300px;
   padding: 30px 0px;
 }
-/* line 95, /Users/jerry/Sites/1stRevenue_com/less/main.less */
-#nav-detail h4 {
-  font-weight: 300;
-}
-/* line 102, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 103, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #signup form {
   padding-top: 20px;
 }
-/* line 105, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 106, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #signup form .form-group {
   position: relative;
   width: 30%;
 }
 @media (max-width: 768px) {
-  /* line 109, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+  /* line 110, /Users/jerry/Sites/1stRevenue_com/less/main.less */
   #signup form .form-group {
     width: 100%;
   }
 }
-/* line 114, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 115, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #signup form .form-group input[placeholder] {
   font-size: 23px;
 }
-/* line 117, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 118, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #signup form .form-group .form-control {
   height: 50px;
 }
-/* line 121, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 122, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 #signup form button {
   height: 50px;
   font-size: 20px;
 }
-/* line 129, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 130, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu {
   margin-top: 60px;
 }
-/* line 132, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 133, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu .contact {
   margin-bottom: 40px;
 }
-/* line 134, /Users/jerry/Sites/1stRevenue_com/less/main.less */
+/* line 135, /Users/jerry/Sites/1stRevenue_com/less/main.less */
 footer .bottom-menu .contact h4 {
   padding-bottom: 10px;
 }
